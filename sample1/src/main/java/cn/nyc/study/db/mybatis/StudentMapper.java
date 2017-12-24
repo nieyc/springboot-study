@@ -17,8 +17,11 @@ public interface StudentMapper {
     @Insert("INSERT INTO student(NAME, AGE) VALUES(#{name}, #{age})")
     int insert(@Param("name") String name, @Param("age") Integer age);
     
+    @Insert("INSERT INTO student(NAME, AGE) VALUES(#{name}, #{age})")
+    int insertByUser(Student student);
+    
     @Update("UPDATE student SET age=#{age} WHERE name=#{name}")
-    void update(Student user);
+    void update(Student student);
 
     @Delete("DELETE FROM student WHERE id =#{id}")
     void delete(Long id);

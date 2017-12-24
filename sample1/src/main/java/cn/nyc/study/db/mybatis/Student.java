@@ -2,6 +2,11 @@ package cn.nyc.study.db.mybatis;
 
 public class Student {
 	
+	public Student(String name,Integer age) {
+		this.name=name;
+		this.age=age;
+	}
+	
 	private Long id;
 	private String name;
 	private Integer age;
