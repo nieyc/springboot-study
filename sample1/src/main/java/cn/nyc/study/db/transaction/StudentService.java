@@ -7,10 +7,7 @@ import cn.nyc.study.db.mybatis.Student;
 import cn.nyc.study.db.mybatis.StudentMapper;
 
 public interface StudentService {
-	
-	
-	
-	
+
     void addMoreStudent();
 
 }

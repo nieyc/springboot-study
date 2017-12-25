@@ -28,7 +28,7 @@ public class HelloController {
 	String sayHello() {
 		System.out.println("url:"+url);
 		System.out.println("userSerivce:"+userSerivce);
-		userSerivce.create("zhangsan", 20);
+		//userSerivce.create("zhangsan", 20);
 		return "hello,world";
 	}
 	
