@@ -48,9 +48,7 @@ public class HelloController {
 		//return "hello,spring-boot";
 	}
 	
-	public static void main(String[] args) {
-		SpringApplication.run(HelloController.class, args);
-	}
+
 	
 
 }

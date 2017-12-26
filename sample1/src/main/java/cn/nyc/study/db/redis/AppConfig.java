@@ -15,7 +15,6 @@ public class AppConfig {
 
     @Bean
     public RedisConnectionFactory connectionFactory() {
-        System.out.println("0000000000000000000");
         return new JedisConnectionFactory(new RedisClusterConfiguration(clusterProperties.getNodes()));
     }
 
