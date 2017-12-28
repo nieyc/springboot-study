@@ -5,8 +5,8 @@
   <groupId>cn.nyc.study</groupId>
   <artifactId>sample1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
+  <!--<packaging>jar</packaging>-->
+    <packaging>war</packaging>
   <name>sample1</name>
   <url>http://maven.apache.org</url>
   
@@ -26,6 +26,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+           <!-- <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>-->
         </dependency>
         
           <dependency>
@@ -49,8 +55,14 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-actuator</artifactId>
       </dependency>
-     
-    
+
+      <!--在用maven 编译，打包过程中回出现javax.servlet找不到的情况，所以需要在这里配置-->
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.0.1</version>
+      </dependency>
+
 	<dependency>
 		<groupId>io.springfox</groupId>
 		<artifactId>springfox-swagger2</artifactId>

@@ -31,8 +31,8 @@ public class RedisController {
     private RedisConnectionFactory  redisConnectionFactory;
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
-    @Autowired
-    private RedisTemplate redisTemplate;
+   // @Autowired
+    //private RedisTemplate redisTemplate;
 
 
     @RequestMapping("/test1")
@@ -45,8 +45,8 @@ public class RedisController {
         byte[] value="aaaa".getBytes();
         redOpt.set(key, value);
         System.out.println("============:"+new String(redOpt.get(key)));
-        redisTemplate.opsForValue().set("name", "liyiwen");
-        System.out.println(""+redisTemplate.opsForValue().get("name"));
+        //redisTemplate.opsForValue().set("name", "liyiwen");
+       // System.out.println(""+redisTemplate.opsForValue().get("name"));
         return "hello";
     }
 }
