@@ -121,6 +121,30 @@
 	  <version>2.9.1</version>
 	</dependency>
  <!-- log4j2 end -->
+
+    <!--webservice-->
+
+
+      <dependency>
+          <groupId>org.apache.cxf</groupId>
+          <artifactId>cxf-rt-frontend-jaxws</artifactId>
+          <version>3.2.0</version>
+      </dependency>
+
+
+
+      <dependency>
+          <groupId>org.apache.cxf</groupId>
+          <artifactId>cxf-rt-transports-http</artifactId>
+          <version>3.2.1</version>
+      </dependency>
+
+     <!-- <dependency>
+          <groupId>org.apache.cxf</groupId>
+          <artifactId>cxf-bundle</artifactId>
+          <version>2.7.6</version>
+      </dependency>-->
+      <!--webservice-->
 	
   </dependencies>
   
