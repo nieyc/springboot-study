@@ -1,3 +1,6 @@
 /target/
 /*.log
+/*.idea/
 /.idea/
+../.diea/
+classpath

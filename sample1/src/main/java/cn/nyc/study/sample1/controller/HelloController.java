@@ -7,11 +7,12 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import cn.nyc.study.db.jdbc.UserService;
 
 
-@Controller
+@RestController
 @EnableAutoConfiguration
 @RequestMapping("/hello")
 public class HelloController {
@@ -30,6 +31,13 @@ public class HelloController {
 		System.out.println("userSerivce:"+userSerivce);
 		//userSerivce.create("zhangsan", 20);
 		return "hello,world";
+	}
+	
+	@RequestMapping("/why")
+	@ResponseBody
+	String sayWhy() {
+		System.out.println("sssssssssssssssss");
+		return "why";
 	}
 	
 	/**
